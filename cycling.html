@@ -27,6 +27,7 @@
           zoom: 4,
           center: {lat: 29.64551, lng: -95.277414},
         });
+<<<<<<< HEAD
 		var flightPath = new google.maps.Polyline({
         path: [
             {lat: 40.641311, lng: -73.778139},  //New York
@@ -39,6 +40,23 @@
         strokeWeight: 2
         });
 	  flightPath.setMap(map);
+=======
+		  
+		var flightPath = new google.maps.Polyline({
+    path: [
+            {lat: 35.681131, lng: 139.768581},  //New York
+            {lat: 35.681558,  lng: 139.770083},  //Houston
+            {lat: 35.681070, lng: 139.771617}  //Los Angeles
+          ],
+    geodesic: true,  //ポリラインを測地線に
+    strokeColor: '#FF0000', //ポリラインの色の指定
+    strokeOpacity: 1.0, //ポリラインの透明度の指定
+    strokeWeight: 2 //ポリライン太さ（2px）を指定
+  });
+  
+  //ポリライン（線）のインスタンスを地図に配置（表示）
+  flightPath.setMap(map);
+>>>>>>> ea19a0d797f6d5e3d4b21166607f2a75a364b35d
       }
 	  
     </script>
