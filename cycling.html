@@ -24,10 +24,23 @@
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 35.681, lng: 139.765},
-          zoom: 17
+          zoom: 4,
+          center: {lat: 29.64551, lng: -95.277414},
         });
+		var flightPath = new google.maps.Polyline({
+        path: [
+            {lat: 40.641311, lng: -73.778139},  //New York
+            {lat: 29.64551, lng: -95.277414},  //Houston
+            {lat: 33.941589, lng: -118.40853}  //Los Angeles
+        ],
+        geodesic: true,
+        strokeColor: '#FF0000',
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+        });
+	  flightPath.setMap(map);
       }
+	  
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3lPqE1wCTumGqszV5vfy_Z-xXgPJYLBc&callback=initMap"
     async defer></script>
