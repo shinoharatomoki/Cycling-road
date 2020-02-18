@@ -4,6 +4,7 @@
     <title>Simple Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
+	
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -27,7 +28,7 @@
           center: {lat: 35.681, lng: 139.765},
           zoom: 17
         });
-		  
+
 		var flightPath = new google.maps.Polyline({
     path: [
             {lat: 35.681131, lng: 139.768581},  //New York
@@ -41,10 +42,10 @@
   });
   
   //ポリライン（線）のインスタンスを地図に配置（表示）
-  flightPath.setMap(map);
-      }
+  flightPath.setMap(map);	
+	  }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3lPqE1wCTumGqszV5vfy_Z-xXgPJYLBc&callback=initMap"
-    async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3lPqE1wCTumGqszV5vfy_Z-xXgPJYLBc&callback=initMap"async defer></script>
+	
   </body>
 </html>
